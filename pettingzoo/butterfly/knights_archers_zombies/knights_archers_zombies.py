@@ -17,10 +17,10 @@ This environment is part of the <a href='..'>butterfly environments</a>. Please 
 | Agents               | 4                                                              |
 | Action Shape         | (1,)                                                           |
 | Action Values        | [0, 5]                                                         |
-| Observation Shape    | (512, 512, 3)                                                  |
-| Observation Values   | (0, 255)                                                       |
-| State Shape          | (720, 1280, 3)                                                 |
-| State Values         | (0, 255)                                                       |
+| Observation Shape    | (27, 5), or (512, 512, 3) with `obs_method="image"`            |
+| Observation Values   | [-1, 1], or (0, 255) with `obs_method="image"`                 |
+| State Shape          | (26, 4), or (720, 1280, 3) with `obs_method="image"`           |
+| State Values         | [-1, 1], or (0, 255) with `obs_method="image"`                 |
 
 
 Zombies walk from the top border of the screen down to the bottom border in unpredictable paths. The agents you control are knights and archers (default 2 knights and 2 archers) that are initially positioned at the bottom border of the screen. Each agent can rotate clockwise or counter-clockwise
